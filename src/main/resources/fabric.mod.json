@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "launchscreenchanger",
+  "version": "${version}",
+  "name": "LaunchScreenChanger",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/LynixPlayz/LaunchScreenChanger"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/launchscreenchanger/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.lynix.launchscreenchanger.client.LaunchScreenChangerClient"
+    ]
+  },
+  "mixins": [
+    "launchscreenchanger.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
